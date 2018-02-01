@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-    <title>Read in JSON</title>
-    <script src="jquery-3.3.1.min.js"></script>
-    <script src="jsonParse.js"></script>
+        <title>Read in JSON</title>
+        <script src="jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.getJSON("json/student.json", function(result){
+            $.each(result, function(i, field){
+                $(".student").append(i + " : " + field + " ");
+            });
+        });
+        $.getJSON("json/course.json", function(result){
+            $.each(result, function(i, field){
+                $(".course").append(i + " : " + field + " ");
+            });
+        });
+    });
+});
+</script>
 </head>
-
 <body>
 
-</body>
+<button>Get JSON data</button>
 
+<h3>Student Json: </h3>
+<div class="student"></div>
+
+<h3>Course Json: </h3>
+<div class="course"></div>
+
+</body>
 </html>

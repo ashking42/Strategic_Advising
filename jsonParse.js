@@ -1,6 +1,12 @@
 $(document).ready(function() {
-    var json = $.getJSON('json/student.json');
-    window.alert(json);
+    window.alert('hi');
+    $.getJSON("json/student.json"), function( data ) {
+        $.each(result, function(i, field){
+                $("div").append(field + " ");
+        });
+    });
+    
     var obj = JSON.stringify(json);
-    window.alert(obj);
+    obj.name = new String(obj.name);
+    
 });
