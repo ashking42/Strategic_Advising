@@ -11,15 +11,16 @@ var jsonContent = {
             "offering": "spring, fall, summer",
             "creditHours": "4"
         ,
-          "title": "Applied Calculus 1",
-          "courseName": "MATH 161",
-          "requisitionNumber": "",
-          "prerequisites": "MATH 111, MATH 112",
-          "corequisite": "",
-          "restrictions": "MATH 165",
-          "offering": "spring, summer, fall",
-          "creditHours": "3"
+            "title": "Applied Calculus 1",
+            "courseName": "MATH 161",
+            "requisitionNumber": "",
+            "prerequisites": "MATH 111, MATH 112",
+            "corequisite": "",
+            "restrictions": "MATH 165",
+            "offering": "spring, summer, fall",
+            "creditHours": "3"
 };
+
 
 var fs = require('fs');
 var body = JSON.stringify(jsonContent);
