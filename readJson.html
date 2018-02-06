@@ -5,23 +5,10 @@
 
         <title>Read in JSON</title>
         <script src="jquery-3.3.1.min.js"></script>
-<script>
-$(document).ready(function(){
-    $("button").click(function(){
-        $.getJSON("json/student.json", function(result){
-            $.each(result, function(i, field){
-                $(".student").append(i + " : " + field + " ");
-            });
-        });
-        $.getJSON("json/course.json", function(result){
-            $.each(result, function(i, field){
-                $(".course").append(i + " : " + field + " ");
-            });
-        });
-    });
-});
-</script>
-</head>
+        <script src="require.js"></script>
+        <script src="jsonParse.js"></script>
+
+    </head>
 <body>
 
 <button>Get JSON data</button>

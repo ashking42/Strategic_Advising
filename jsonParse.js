@@ -1,12 +1,15 @@
-$(document).ready(function() {
-    window.alert('hi');
-    $.getJSON("json/student.json"), function( data ) {
-        $.each(result, function(i, field){
-                $("div").append(field + " ");
+$(document).ready(function(){
+    //Trying to get this shortened and useable with require.js
+    $("button").click(function(){
+        $.getJSON("json/student.json", function(result){
+            $.each(result, function(i, field){
+                $(".student").append(i + " : " + field + " ");
+            });
+        });
+        $.getJSON("json/course.json", function(result){
+            $.each(result, function(i, field){
+                $(".course").append(i + " : " + field + " ");
+            });
         });
     });
-    
-    var obj = JSON.stringify(json);
-    obj.name = new String(obj.name);
-    
 });
