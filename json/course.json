@@ -1,1 +1,22 @@
-{"title" : "Computer Science 1" , "courseNumber" : "CS 120" , "requisitionNumber" : "#####" , "prerequisites" : "MATH 111,MATH 112,MATH 132,MATH 136,MATH 161,MATH 165" , "corequisite" : "MATH 111,MATH 112,MATH 132,MATH 136,MATH 161,MATH 165" , "restrictions" : "" , "offering" : "spring, fall, summer" , "creditHours" : "4" , "title1" : "Applied Calculus 1" , "courseNumber1" : "MATH 161" , "requisitionNumber1" : "###" , "prerequisites1" : "MATH 111, MATH 112" , "corequisite1" : "None" , "restrictions1" : "MATH 165" , "offering1" : "spring, summer, fall" , "creditHours1" : "3"}
+[
+  {
+    "title" : "Computer Science 1" ,
+    "courseNumber" : "CS 120" ,
+    "requisitionNumber" : "#####" ,
+    "prerequisites" : "MATH 111,MATH 112,MATH 132,MATH 136,MATH 161,MATH 165" ,
+    "corequisite" : "MATH 111,MATH 112,MATH 132,MATH 136,MATH 161,MATH 165" ,
+    "restrictions" : "" ,
+    "offering" : "spring, fall, summer" ,
+    "creditHours" : "4"
+  },
+  {
+    "title" : "Applied Calculus 1" ,
+    "courseNumber" : "MATH 161" ,
+    "requisitionNumber" : "###" ,
+    "prerequisites" : "MATH 111, MATH 112" ,
+    "corequisite" : "None" ,
+    "restrictions" : "MATH 165" ,
+    "offering" : "spring, summer, fall" ,
+    "creditHours" : "3"
+  }
+]
